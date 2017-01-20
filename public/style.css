@@ -1,0 +1,215 @@
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+@font-face {
+  font-family: 'Gotham';
+  src: url("./fonts/GothamNarrow-Book.otf"); }
+@font-face {
+  font-family: 'Gotham-lite';
+  src: url("./fonts/GothamNarrow-Light.otf"); }
+@font-face {
+  font-family: 'Gotham-med';
+  src: url("./fonts/GothamNarrow-Medium.otf"); }
+.nr-color-green {
+  color: #0AB0BF; }
+
+.nr-color-blue {
+  color: #506DC7; }
+
+div.error {
+  color: red; }
+
+body {
+  color: #4A4A4A;
+  font-family: 'Gotham';
+  font-size: 9pt;
+  line-height: 13pt;
+  margin: 0; }
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Gotham-lite';
+  margin: 0; }
+
+h1 {
+  margin: 15px 0; }
+
+b {
+  font-family: 'Gotham-med';
+  font-weight: 400; }
+
+select, input {
+  -webkit-appearance: none;
+  background: #fff;
+  border-radius: 0px;
+  border: 1px solid #a6a6a6;
+  cursor: pointer;
+  font-size: 10pt;
+  font-weight: 600;
+  margin: 7px 0 10px 0;
+  padding: 12px;
+  position: relative;
+  width: 100%; }
+
+input.error {
+  background: #ffe7e7;
+  border-color: red; }
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.3; }
+
+.button {
+  background: #1E6583;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  padding: 13px 30px;
+  transition: .3s background; }
+  .button:hover {
+    background: #3982a0; }
+
+.card {
+  border: 1px solid #ccc;
+  padding: 20px; }
+
+.container {
+  max-width: 1100px;
+  padding: 40px;
+  width: 100%; }
+
+.divider {
+  background: #ccc;
+  height: 1px;
+  margin: 15px 0;
+  width: 100%; }
+
+.header {
+  background: #f5f5f5;
+  font-family: 'Gotham-med';
+  margin: 30px 0 10px 0;
+  padding: 10px;
+  font-size: 8pt; }
+
+.page-header {
+  border-bottom: 2px solid #ccc;
+  padding: 3px 10px; }
+
+.select-wrap {
+  position: relative; }
+  .select-wrap:after {
+    color: #bbb;
+    content: '\E313';
+    font-family: 'Material Icons';
+    font-size: 16pt;
+    pointer-events: none;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%); }
+  .select-wrap .label {
+    font-size: 11pt; }
+
+.side-nav {
+  background: #eaeaea;
+  width: 200px;
+  border-right: 1px solid #ddd; }
+  .side-nav .label {
+    color: #888;
+    font-size: 10pt;
+    margin: 30px 0 0 0;
+    padding: 0 15px; }
+  .side-nav .links > div {
+    cursor: pointer;
+    padding: 7px 30px;
+    position: relative;
+    z-index: 1; }
+    .side-nav .links > div:after {
+      width: 0%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: #fff;
+      content: '';
+      position: absolute;
+      transition: width .3s;
+      z-index: -1; }
+    .side-nav .links > div:hover:not(.active):after {
+      width: 100%;
+      border-left: 3px solid #2f889a; }
+  .side-nav .links .active {
+    background: #fff;
+    border-left: 3px solid #2f889a;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-family: 'Gotham-med';
+    padding: 7px 26px;
+    width: 146px; }
+
+.top-nav {
+  color: #fff; }
+  .top-nav .top {
+    background: #2f889a;
+    height: 40px; }
+  .top-nav .bottom {
+    background: #595959;
+    height: 35px;
+    padding: 0 10px; }
+    .top-nav .bottom span {
+      line-height: 35px;
+      margin: 0 25px 0 0; }
+
+.flex {
+  display: flex; }
+
+.flex-row {
+  flex-direction: row; }
+  .flex-row.space-between {
+    justify-content: space-between; }
+  .flex-row.flex-end {
+    justify-content: flex-end; }
+
+.flex-50 {
+  flex: 1 1 50%;
+  max-width: 50%; }
+
+.padding {
+  padding: 15px; }
+
+.text-right {
+  text-align: right; }
+
+.hide {
+  display: none !important; }
+
+.nr-subscription {
+  flex-wrap: wrap; }
+  .nr-subscription .cart {
+    cursor: pointer;
+    margin: 10px 0; }
+    .nr-subscription .cart i {
+      color: #1E6583;
+      font-size: 22pt; }
+    .nr-subscription .cart .icon {
+      background: url(./cart.png) center center/cover;
+      display: inline-block;
+      height: 28px;
+      margin: 0 5px 0 0;
+      width: 32px; }
+  .nr-subscription .feature-item {
+    padding: 13px 10px;
+    border-bottom: 1px solid #ddd; }
+    .nr-subscription .feature-item i {
+      font-size: 12pt;
+      font-weight: 800;
+      width: 30px; }
+  .nr-subscription .form-item {
+    margin: 30px 0 50px 0; }
+  .nr-subscription .cost {
+    font-size: 30pt;
+    margin: 25px 0 10px 0; }
+  .nr-subscription .flex-50 {
+    max-width: 420px; }
+  .nr-subscription .features .header span, .nr-subscription .features .feature-item i {
+    display: inline-block;
+    text-align: center;
+    width: 30px; }
+
+/*# sourceMappingURL=style.css.map */
