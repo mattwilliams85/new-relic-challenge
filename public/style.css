@@ -122,18 +122,18 @@ input.error {
     position: relative;
     z-index: 1; }
     .side-nav .links > div:after {
-      width: 0%;
-      height: 100%;
-      top: 0;
-      left: 0;
       background: #fff;
       content: '';
+      height: 100%;
+      left: 0;
       position: absolute;
+      top: 0;
       transition: width .3s;
+      width: 0%;
       z-index: -1; }
     .side-nav .links > div:hover:not(.active):after {
-      width: 100%;
-      border-left: 3px solid #2f889a; }
+      border-left: 3px solid #2f889a;
+      width: 100%; }
   .side-nav .links .active {
     background: #fff;
     border-left: 3px solid #2f889a;
@@ -153,6 +153,7 @@ input.error {
     height: 35px;
     padding: 0 10px; }
     .top-nav .bottom span {
+      cursor: pointer;
       line-height: 35px;
       margin: 0 25px 0 0; }
 
