@@ -1,6 +1,6 @@
 ## New Relic Coding Challenge
 
-##### Assignment
+#### Assignment
 The goal of this exercise is to assess your ability to write Semantic HTML and CSS. Along with
 this document you will have received a Sketch file, the Gotham Narrow font bundle, and a PDF
 version with the Subscription Upgrade Workflow in New Relic’s Self-Service store. Below you
@@ -19,11 +19,11 @@ conventions and organize your CSS? You are not expected to write a full-fledged 
 just the parts that will support your implementation for the APM Step 4 Error page.
 
 
-##### User Story
+#### User Story
 *As a New Relic Customer, I want to be able to see how much my monthly subscription of
 APM is going to cost before adding my order to the cart.*
 
-##### Instructions
+#### Instructions
 1. Run $npm start
 2. Open localhost:3000 in your web browser
 3. Enjoy!
